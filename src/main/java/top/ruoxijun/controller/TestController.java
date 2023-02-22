@@ -15,16 +15,21 @@ import java.util.List;
  * @create: 2023-02-21 21:31
  **/
 
-@RequestMapping("/test")
 @RestController
 public class TestController {
 
     @Autowired
     private UserService userService;
 
-    public List<User> test(){
+    @RequestMapping("/hello")
+    public List<User> hello(){
         List<User> userList = userService.list(null);
         return userList;
+    }
+
+    @RequestMapping("/test")
+    public String test(){
+        return "test";
     }
 
 }
