@@ -1,4 +1,4 @@
-package top.ruoxijun.usermanage;
+package top.ruoxijun;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
